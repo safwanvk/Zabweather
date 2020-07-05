@@ -32,6 +32,6 @@ def home(request):
         result['day_hour'] = soup.find("div", attrs={"id": "wob_dts"}).text
         # get the actual weather
         result['weather_now'] = soup.find("span", attrs={"id": "wob_dc"}).text
-        # get the actual weather image
-        result['weather_img'] = soup.find("img", attrs={"id": "wob_tci"}).text
+
+        result['sun_temp_prev'] = soup.find("span", attrs={"class": "wob_t"}).text
     return render(request, 'core/home.html', {'result': result})

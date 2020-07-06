@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'e)2y-io@t==h%2^s!fmvd%g+s8*)c5lq#9cqhqdu04uj$a6o7-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://zabweather.herokuapp.com', 'localhost', '127.0.0.1']
 

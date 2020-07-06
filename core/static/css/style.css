@@ -1339,7 +1339,7 @@ form textarea {
     content: " ";
     width: 7px;
     height: 9px;
-    background: url(images/arrow-down.png);
+    background: url({% static 'images/arrow-down.png' %});
     position: absolute;
     right: 10px;
     top: 0;

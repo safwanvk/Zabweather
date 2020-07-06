@@ -71,7 +71,9 @@
 								<div class="location">{{ result.region }}</div>
 								<div class="degree">
 									<div class="num">{{ result.temp_now }}<sup>o</sup>C</div>
-									<img src="{% static 'images/icons/icon-1.svg' %}" alt="" width=48>
+									<div class="forecast-icon">
+										<img src="{% static 'images/icons/icon-1.svg' %}" alt="" width=90>
+									</div>
 								</div>
 									<div>
 										{{ result.weather_now }}

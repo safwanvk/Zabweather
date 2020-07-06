@@ -33,5 +33,5 @@ def home(request):
         # get the actual weather
         result['weather_now'] = soup.find("span", attrs={"id": "wob_dc"}).text
 
-        result['sun_temp_prev'] = soup.find("span", attrs={"class": "wob_t"}).text
+        
     return render(request, 'core/home.html', {'result': result})
